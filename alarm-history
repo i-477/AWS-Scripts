@@ -1,0 +1,2 @@
+aws cloudwatch describe-alarm-history --history-item-type StateUpdate --start-date <start> --end-date <end> --output json > alarm_history.json
+python process_alarm_history.py > data.csv
